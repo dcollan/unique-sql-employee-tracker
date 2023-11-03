@@ -34,7 +34,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 Create an application using mysql2 and inquirer, where, provided with a selection of options to choose from, they will include whether to view a list of employees, view a list of roles, view a list of departments, add new employees, add new departments, add new roles, or simply update existing employee roles, where there will be an extra option to exit the application. It must be so that, when a user selects a choice, the table will be returned with department, role, or employee information (or where it is continuously updated by the user's entries, the updated table will also be returned). For a bonus, add a delete option to remove employees, departments, or roles from the database, including updating employee managers, viewing employees by manager, viewing employees by department, or viewing the total budget of any department.
 
-![img](./Assets/unique-sql-employee-tracker.png)
+![img](./Assets/unique-sql-employee-tracker-screenshot.png)
 
 ## Link to Video
 https://www.youtube.com/watch?v=9AJjRyGpiNw
