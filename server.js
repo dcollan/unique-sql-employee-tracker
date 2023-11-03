@@ -76,3 +76,24 @@ function start() {
         });
 }
 
+// Function to query data on selecting all current departments to view from 'departments' table
+function viewAllDepartments() {
+    const query = "SELECT * FROM departments";
+    connection.query(query, (err, res) => {
+        if (err) throw err;
+        console.table(res);
+        start();
+    });
+}
+
+// Function to query data on selecting all current roles, along with their associated ids, department names, salaries
+function viewAllRoles() {
+    const query = "SELECT roles.title, roles.id, departments.department_name, roles.salary from roles join departments on roles.department_id = departments.id";
+    connection.query(query, (err, res) => {
+        if (err) throw err;
+        console.table(res);
+        // restart the application
+        start();
+    });
+}
+
